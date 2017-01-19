@@ -32,7 +32,7 @@ A webpage that converts numbers between 1 and 3999 to Roman Numerals.
 
   2. Determines the number of hundreds in the number by subtracting away the thousands and then dividing the remainder by 100. It then displays that many "C" symbols, unless the amount falls under other exclusion criteria.
 
-  _Exclusion criteria:_
+  #### _Exclusion criteria:_
   **If the number of hundreds is less than 1, it does not display anything, if it is equal to four it displays CD, if it is equal or greater than five, it displays "D + the remaining amount of hundreds in Cs", if it is equal to 9 then it displays "CM".**
 
   #### _Input Example: 3400_
@@ -40,7 +40,7 @@ A webpage that converts numbers between 1 and 3999 to Roman Numerals.
 
   3. Determines the number of tens in the number by subtracting away the thousands and hundreds, then dividing the remainder by 10. It then displays that many "X" symbols, unless the amount falls under other exclusion criteria.
 
-  _Exclusion criteria:_
+  #### _Exclusion criteria:_
   **If the number of tens is less than 1, it does not display anything, if it is equal to four it displays XL, if it is equal or greater than five, it displays "L + the remaining amount of tens in Xs", if it is equal to 9 then it displays "XC".**
 
   #### _Input Example: 3450_
@@ -48,7 +48,7 @@ A webpage that converts numbers between 1 and 3999 to Roman Numerals.
 
   4. Determines the number of ones in the number by subtracting away the thousands, hundreds, and tens. It then displays that many "I" symbols, unless the amount falls under other exclusion criteria.
 
-  _Exclusion criteria:_
+  #### _Exclusion criteria:_
   **If the number of ones is less than 1, it does not display anything, if it is equal to four it displays IV, if it is equal or greater than five, it displays "V + the remaining amount of ones in Is", if it is equal to 9 then it displays "IX".**
 
   #### _Input Example: 3457_
