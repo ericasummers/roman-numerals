@@ -2,6 +2,13 @@ $(document).ready(function() {
   $("form#roman-numbers").submit(function(event) {
     event.preventDefault();
     var numberinput = parseInt($("input#numberin").val());
+    if (!numberinput) {
+      alert("Please enter a number between 1-3999");
+    } else if (numberinput >= 4000) {
+      alert("Please select a number below 4000");
+      document.getElementByID('answer').style.display = "none";
+    }
+
     var thoustotal = function(athousand) {
     	var thousands = parseInt(numberinput / 1000);
       if (thousands === 0) {
