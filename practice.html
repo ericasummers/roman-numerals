@@ -1,0 +1,45 @@
+Roman Numerals Behavior
+number = total of all symbols
+
+
+If it's not a number = error
+if it's greater than 3999 = no symbol
+
+if it's 4 = IV
+if it's 9 = IX
+if it's 40 = XL
+if it's 90 = XC
+if it's 400 = CD
+if it's 900 = CM
+
+
+Starting from 3999 and under
+
+User submit a number: @
+
+1. @ / 1000 = a (the amount of thousands in @)
+2. Display a (numbers of) M
+  - If a < 1 = do not display any M
+
+3. @ - (a * 1000) = b
+4. b / 100 = c
+5. Display c (numbers of) C
+  - If c < 1 = do not display any C
+  - If c = 4 then display CD
+  - If c >= 5 then display D + (c - 5)number of C
+  - If c = 9 then display CM
+
+6. b - (c * 100) = d
+7. d / 10 = e
+8. Display e (numbers of) X
+  - If e < 1 = do not display any X
+  - If e = 4 then display XL
+  - If e >= 5 then display L + (e - 5)number of X
+  - If e = 9 then display XC
+
+9. d - (e * 10) = f
+10. Display f (numbers of) I
+  - If f < 1 then nothing
+  - If f = 4 then display IV
+  - If f >= 5 then display V + (f-5)number of I
+  - If f = 9 then display IX
