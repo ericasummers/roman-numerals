@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $("form#roman-numbers").submit(function(event) {
     event.preventDefault();
-    var numberinput = parseInt($("input#number").val());
+    var numberinput = parseInt($("input#numberin").val());
     var thoustotal = function(athousand) {
     	var thousands = parseInt(numberinput / 1000);
       if (thousands === 0) {
@@ -65,8 +65,8 @@ $(document).ready(function() {
 
     var result = (thoustotal(numberinput) + hundtotal(numberinput) + tentotal(numberinput) + onetotal(numberinput));
 
-    $(".number").text("numberinput");
-    $(".numeral").text("result");
+    $(".numberin").text(numberinput);
+    $(".numeral").text(result);
 
     $("#answer").show();
   });
